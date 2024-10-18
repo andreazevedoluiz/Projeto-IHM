@@ -70,7 +70,7 @@
 body {
     background-image: url('../img/logo\ cinza\ central.png'); /* Substitua pelo caminho da sua imagem */
     background-size: cover; /* Faz a imagem cobrir todo o fundo */
-    background-repeat: no-repeat; /* Não repete a imagem */
+   /* background-repeat: no-repeat; /* Não repete a imagem */
     background-position: center; /* Centraliza a imagem */
     height: 100vh; /* Faz o body ocupar toda a altura da janela */
     margin: 0; /* Remove a margem padrão do body */
