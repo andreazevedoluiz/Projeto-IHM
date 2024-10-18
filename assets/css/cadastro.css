@@ -72,3 +72,28 @@ button {
 button:hover {
     background-color: var(--vermelho); /* Muda a cor de fundo ao passar o mouse */
 }
+
+.btn-salvar {
+    background-color: #004aad; /* Azul */
+    color: #ffffff; /* Branco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px; /* Margem superior para separação */
+}
+
+.btn-salvar:hover {
+    background-color: #003a8c; /* Azul escuro no hover */
+}
+
+
+
+.formulario label {
+    margin: 10px 0 5px; /* Margem entre os rótulos e os campos */
+}
+
+.formulario input[type="file"] {
+    margin-top: 10px; /* Espaço acima do campo de upload */
+}
