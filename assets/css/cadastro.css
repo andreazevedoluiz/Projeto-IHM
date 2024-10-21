@@ -1,0 +1,99 @@
+body {
+    font-family: var(--fonte-principal);
+    margin: 0;
+    padding: 0;
+    
+}
+
+.formulario {
+    max-width: 50%; /* Limita a largura dos formulários a 75% da página */
+    margin: 20px auto; /* Margem superior e inferior de 20px, centraliza o conteúdo */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Títulos dos formulários */
+.titulo-cadastro{
+    color: var(--azul);
+    margin: 20px 10px; /*Margem superior de 20 px e inferior de 10px*/
+}
+
+.sub-titulo-cadastro {
+    color: var(--azul);
+    margin: 10px 0; /* Margem superior e inferior de 10px */
+}
+
+label {
+    display: block; /* Exibe os rótulos como blocos */
+    margin-bottom: 5px; /* Espaço abaixo do rótulo */
+}
+
+/* Estilo para os inputs e selects */
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="tel"],
+select {
+    width: 95%; /* Largura total do campo */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaço entre os campos */
+    border: 1px solid var(--cinza-escuro); /* Borda do campo */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estilo para a linha dos formulários */
+.form-inline {
+    display: flex; /* Permite que os campos fiquem na mesma linha */
+    justify-content: flex-start; /* Alinha à esquerda */
+    gap: 20px; /* Adiciona espaço entre os campos */
+}
+
+/* Ajuste nos campos pequenos */
+.form-inline > div {
+    flex: 1; /* Permite que os campos se expandam igualmente */
+}
+
+.form-inline > div:last-child {
+    margin-right: 0; /* Remove margem do último campo */
+}
+
+/* Estilo dos botões */
+button {
+    background-color: var(--azul); /* Cor de fundo do botão */
+    color: var(--branco); /* Cor do texto do botão */
+    padding: 10px 15px; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    margin-top: 10px; /* Margem superior do botão */
+}
+
+button:hover {
+    background-color: var(--vermelho); /* Muda a cor de fundo ao passar o mouse */
+}
+
+.btn-salvar {
+    background-color: #004aad; /* Azul */
+    color: #ffffff; /* Branco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px; /* Margem superior para separação */
+}
+
+.btn-salvar:hover {
+    background-color: #003a8c; /* Azul escuro no hover */
+}
+
+
+
+.formulario label {
+    margin: 10px 0 5px; /* Margem entre os rótulos e os campos */
+}
+
+.formulario input[type="file"] {
+    margin-top: 10px; /* Espaço acima do campo de upload */
+}
