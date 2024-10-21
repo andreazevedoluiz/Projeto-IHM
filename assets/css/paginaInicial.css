@@ -31,7 +31,7 @@
     padding: 10px;
     width: 120px;          /* Largura fixa do botão */
     height: 90px;          /* Altura fixa do botão */
-    border: 2px solid  rgba(0, 0, 0, 0.1); /* Borda azul (você pode ajustar a cor) */
+    border: 2px solid  rgba(0, 0, 0, 0.1); 
     border-radius: 8px;       /* Bordas arredondadas */
     transition: background-color 0.3s ease, border-color 0.3s ease; /* Transição suave para hover */
     background-color: white;   /* Cor de fundo do botão */
@@ -65,13 +65,4 @@
     text-decoration: none; /* Remove o sublinhado */
     color: #333;          /* Cor do texto (pode ser ajustada) */
     
-}
-
-body {
-    background-image: url('../img/logo\ cinza\ central.png'); /* Substitua pelo caminho da sua imagem */
-    background-size: cover; /* Faz a imagem cobrir todo o fundo */
-    background-repeat: no-repeat; /* Não repete a imagem */
-    background-position: center; /* Centraliza a imagem */
-    height: 100vh; /* Faz o body ocupar toda a altura da janela */
-    margin: 0; /* Remove a margem padrão do body */
 }
