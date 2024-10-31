@@ -39,7 +39,7 @@
                         </a>
                     </li>
                     <li class="icones-lista-link">
-                        <a href="#">
+                        <a href="javascript:void(0)" onclick="confirmarSaida()">
                             <img src="/assets/img/sair.png" alt="Ícone de sair">
                             <p>Sair</p>
                         </a>
@@ -49,8 +49,19 @@
         </div>
     </header>
 
+    <!-- Alerta de saída -->
+    <div id="alert-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="fecharModal()">&times;</span>
+            <p>Tem certeza que deseja sair?</p>
+            <button onclick="confirmarRedirecionamento()">Sim</button>
+            <button onclick="fecharModal()">Não</button>
+        </div>
+    </div>
+
+   
    
 
-
+    <script src="/assets/js/script.js"></script>
 </body>
 </html>

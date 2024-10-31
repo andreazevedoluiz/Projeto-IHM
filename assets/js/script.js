@@ -53,3 +53,23 @@ document.addEventListener('click', function (e) {
         e.target.parentElement.remove();
     }
 });
+
+//saída da tela inicial
+
+// Exibe o modal de confirmação
+function confirmarSaida() {
+    const modal = document.getElementById('alert-modal');
+    modal.style.display = "block"; // Mostra o modal
+}
+
+// Fecha o modal
+function fecharModal() {
+    const modal = document.getElementById('alert-modal');
+    modal.style.display = "none"; // Oculta o modal
+}
+
+// Confirma a saída e redireciona
+function confirmarRedirecionamento() {
+    window.location.href = "../html/login.html"; // Redireciona para a página de login
+}
+    

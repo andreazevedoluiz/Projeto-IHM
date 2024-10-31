@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <main class="login-container">
+        <section class="login-form">
+            <h2>Login</h2>
+            <form action="paginaInicial.html" method="GET">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            
+                <button type="button" class="btn-login" onclick="login()">Entrar</button>
+            </form>
+        </section>
+        <script>
+            function login() {
+                // Simulação do login
+                window.location.href = "paginaInicial.html"; // Redireciona para a página inicial
+            }
+        </script>
+    </main>
+
+
+    
+</body>
+</html>
