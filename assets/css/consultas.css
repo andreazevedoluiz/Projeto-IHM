@@ -1,0 +1,50 @@
+/* Estilos gerais para a tabela de consultas */
+.consultas-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.consultas-table th,
+.consultas-table td {
+    padding: 12px;
+    text-align: left;
+}
+
+/* Faixa vermelha dividindo os horários */
+.consultas-table th {
+    background-color: #ff4d4d; /* Cor vermelha */
+    color: white;
+}
+
+.consultas-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.consultas-table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+/* Estilo do botão de fechar */
+.button-fechar {
+    background-color: #007bff; /* Cor azul para o botão */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-top: 20px; /* Espaçamento acima do botão */
+}
+
+.button-fechar:hover {
+    background-color:var(--vermelho); /* Cor do botão quando passar o mouse */
+}
+
+
+#consultas-container {
+    display: none; /* Escondido por padrão */
+    /* Adicione outras propriedades de estilo, como margem, padding, etc. */
+}

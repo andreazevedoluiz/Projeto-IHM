@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="filtro-container">
+        <input type="date" id="data-filtro" onchange="filtrarConsultas()">
+        <button onclick="filtrarConsultas()">
+            <img src="/assets/img/calendario.png" alt="Filtro de Data" style="width: 20px; height: 20px;">
+        
+    </div>
+    
+    <table class="consultas-table">
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Interno</th>
+                <th>Médico</th>
+                <th>Local</th>
+                <th>Contato do Médico</th>
+            </tr>
+        </thead>
+        <tbody id="consultas-tbody">
+            <tr>
+                <td>10/11/2024</td>
+                <td>João Silva</td>
+                <td>Dr. Pedro Alves</td>
+                <td>Clínica Central</td>
+                <td>(11) 98765-4321</td>
+            </tr>
+            <tr>
+                <td>11/11/2024</td>
+                <td>Maria Souza</td>
+                <td>Dr. Ana Maria</td>
+                <td>Hospital da Luz</td>
+                <td>(11) 91234-5678</td>
+            </tr>
+            <tr>
+                <td>12/11/2024</td>
+                <td>Carlos Oliveira</td>
+                <td>Dr. Felipe Martins</td>
+                <td>Clínica da Família</td>
+                <td>(11) 93456-7890</td>
+            </tr>
+            <tr>
+                <td>12/11/2024</td>
+                <td>João Silva</td>
+                <td>Dr. Pedro Alves</td>
+                <td>Clínica Central</td>
+                <td>(11) 98765-4321</td>
+            </tr>
+            <tr>
+                <td>13/11/2024</td>
+                <td>Fernanda Lima</td>
+                <td>Dr. Ana Maria</td>
+                <td>Hospital da Luz</td>
+                <td>(11) 91234-5678</td>
+            </tr>
+        </tbody>
+    </table>
+</button>
+<!-- Botão de Fechar -->
+<button class="button-fechar" onclick="fecharConsultas()">
+    Fechar
+</button>
+    
+    <script src="../assets/js/script.js"></script> <!-- Certifique-se de incluir o JS -->
+</body>
+</html>

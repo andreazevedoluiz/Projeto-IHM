@@ -33,7 +33,7 @@
                         </a>
                     </li>
                     <li class="icones-lista-link">
-                        <a href="#">
+                        <a href="javascript:void(0)" onclick="abrirConsultas()">
                             <img src="/assets/img/consulta2.png" alt="Ícone de consultas">
                             <p>Consultas</p>
                         </a>
@@ -48,24 +48,13 @@
             </nav>
         </div>
     </header>
-    <!-- Alerta de saída -->
-    <div id="alert-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-button" onclick="fecharModal()">&times;</span>
-            <p>Tem certeza que deseja sair?</p>
-            <button onclick="confirmarRedirecionamento()">Sim</button>
-            <button onclick="fecharModal()">Não</button>
-        </div>
-    </div>
 
+    <!-- Div para carregar o conteúdo de medicamentos -->
     <div id="medicamentos-container"></div>
 
-    
-    
+    <!-- Div para carregar o conteúdo de consultas -->
+    <div id="consultas-container" style="display: none;"></div>
 
-   
-   
-
-    <script src="/assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>

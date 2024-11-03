@@ -1,3 +1,4 @@
+// Função para adicionar nova patologia
 document.getElementById('adicionar-patologia').addEventListener('click', function () {
     const novasPatologiasDiv = document.getElementById('novas-patologias');
     
@@ -54,9 +55,7 @@ document.addEventListener('click', function (e) {
     }
 });
 
-//saída da tela inicial
-
-// Exibe o modal de confirmação
+// Saída da tela inicial
 function confirmarSaida() {
     const modal = document.getElementById('alert-modal');
     modal.style.display = "block"; // Mostra o modal
@@ -73,9 +72,6 @@ function confirmarRedirecionamento() {
     window.location.href = "../html/login.html"; // Redireciona para a página de login
 }
 
-//Botão medicamentos
-
-
 // Função para abrir o modal de medicamentos
 function abrirMedicamentosModal() {
     fetch('/html/medicamentos.html')  // Caminho corrigido
@@ -86,10 +82,58 @@ function abrirMedicamentosModal() {
         });
 }
 
-// Função para fechar o modal
+// Função para fechar o modal de medicamentos
 function fecharMedicamentosModal() {
     const modal = document.getElementById('medicamentos-modal');
     if (modal) {
         modal.style.display = 'none';
     }
 }
+
+// Função para carregar e exibir o conteúdo de consultas
+function abrirConsultas() {
+    fetch('/html/consultas.html')  // Caminho para o arquivo HTML das consultas
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('consultas-container').innerHTML = html;
+            document.getElementById('consultas-container').style.display = 'block';
+            // Opcional: Esconder outros conteúdos, se necessário
+            document.getElementById('medicamentos-container').style.display = 'none';
+            // Fechar outros modais, se necessário
+            fecharMedicamentosModal();
+        });
+}
+
+// Função para fechar a seção de consultas
+function fecharConsultas() {
+    const consultasContainer = document.getElementById('consultas-container');
+    if (consultasContainer) {
+        consultasContainer.style.display = 'none';
+    }
+}
+
+
+
+
+
+
+
+
+        function filtrarConsultas() {
+            const dataFiltro = document.getElementById('data-filtro').value;
+            const tabela = document.querySelector('#consultas-tbody');
+            const linhas = tabela.querySelectorAll('tr');
+
+            linhas.forEach(linha => {
+                const data = linha.cells[0].textContent; // Obtém a data da linha
+                if (dataFiltro) {
+                    if (data === dataFiltro) {
+                        linha.style.display = ''; // Mostra a linha
+                    } else {
+                        linha.style.display = 'none'; // Oculta a linha
+                    }
+                } else {
+                    linha.style.display = ''; // Se não há filtro, mostra todas as linhas
+                }
+            });
+        }

@@ -3,6 +3,7 @@
 @import url('cadastro.css');
 @import url('login.css');
 @import url('medicamnetos.css');
+@import url('consultas.css');
 
 :root{
     --branco: #ffffff;
