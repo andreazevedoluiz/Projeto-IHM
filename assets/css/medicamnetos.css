@@ -1,0 +1,56 @@
+
+
+
+/* Estilos gerais para a tabela de medicamentos */
+.medicamentos-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.medicamentos-table th,
+.medicamentos-table td {
+    padding: 12px;
+    text-align: left;
+}
+
+/* Faixa vermelha dividindo os horários */
+.medicamentos-table th {
+    background-color: #ff4d4d; /* Cor vermelha */
+    color: white;
+}
+
+.medicamentos-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.medicamentos-table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+/* Botão de 'Medicado' ao lado direito */
+.checkbox-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.checkbox-container input[type="checkbox"] {
+    display: none; /* Ocultar o checkbox original */
+}
+
+.checkbox-container label {
+    background-color: #007bff; /* Cor azul para o botão */
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.checkbox-container input[type="checkbox"]:checked + label {
+    background-color: #28a745; /* Cor verde quando marcado */
+}
+

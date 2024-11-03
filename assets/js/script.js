@@ -72,4 +72,24 @@ function fecharModal() {
 function confirmarRedirecionamento() {
     window.location.href = "../html/login.html"; // Redireciona para a página de login
 }
-    
+
+//Botão medicamentos
+
+
+// Função para abrir o modal de medicamentos
+function abrirMedicamentosModal() {
+    fetch('/html/medicamentos.html')  // Caminho corrigido
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('medicamentos-container').innerHTML = html;
+            document.getElementById('medicamentos-modal').style.display = 'block';
+        });
+}
+
+// Função para fechar o modal
+function fecharMedicamentosModal() {
+    const modal = document.getElementById('medicamentos-modal');
+    if (modal) {
+        modal.style.display = 'none';
+    }
+}
