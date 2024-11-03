@@ -49,6 +49,15 @@
         </div>
     </header>
 
+    <div id="alert-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="fecharModal()">&times;</span>
+            <p>Tem certeza que deseja sair?</p>
+            <button onclick="confirmarRedirecionamento()">Sim</button>
+            <button onclick="fecharModal()">Não</button>
+        </div>
+    </div>
+    
     <!-- Div para carregar o conteúdo de medicamentos -->
     <div id="medicamentos-container"></div>
 
