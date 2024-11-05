@@ -3,7 +3,7 @@
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    font-family: Arial, sans-serif;
+    font-family: var(--fonte-principal), sans-serif;
 }
 
 .consultas-table th,
@@ -14,22 +14,22 @@
 
 /* Faixa vermelha dividindo os horários */
 .consultas-table th {
-    background-color: #ff4d4d; /* Cor vermelha */
+    background-color: var(--vermelho); /* Cor vermelha */
     color: white;
 }
 
 .consultas-table tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: var(--branco);
 }
 
 .consultas-table tr:nth-child(odd) {
-    background-color: #fff;
+    background-color: var(--branco);
 }
 
 /* Estilo do botão de fechar */
 .button-fechar {
-    background-color: #007bff; /* Cor azul para o botão */
-    color: white;
+    background-color: var(--azul); /* Cor azul para o botão */
+    color: var(--branco);
     padding: 10px 15px;
     border: none;
     border-radius: 5px;

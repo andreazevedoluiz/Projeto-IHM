@@ -19,7 +19,7 @@
 
 
 body {
-    background-image: url('../img/logo\ cinza\ central.png'); /* Substitua pelo caminho da sua imagem */
+    background-image: url('../img/logo\ cinza\ central.png'); 
     background-size: cover; /* Faz a imagem cobrir todo o fundo */
     background-repeat: no-repeat; /* Não repete a imagem */
     background-position: center; /* Centraliza a imagem */
