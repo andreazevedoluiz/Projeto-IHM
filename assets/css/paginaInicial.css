@@ -112,3 +112,164 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+
+#busca-container {
+    margin-top: 20px;
+}
+
+.barra-de-busca input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.interno-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.icone-lupa {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+#busca-container {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc; /* Adiciona uma borda ao container */
+    border-radius: 5px; /* Arredonda os cantos */
+}
+
+#barra-busca {
+    width: 100%; /* Faz a barra de busca ocupar toda a largura */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda do campo de busca */
+    border-radius: 5px; /* Arredonda os cantos */
+    margin-bottom: 10px; /* Espaçamento abaixo da barra de busca */
+}
+
+#lista-internos {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão */
+}
+
+.interno-item {
+    display: flex; /* Utiliza flexbox para alinhamento */
+    justify-content: space-between; /* Espaça o conteúdo para os lados */
+    padding: 10px; /* Espaçamento interno */
+    border-bottom: 1px solid #ccc; /* Adiciona uma borda inferior */
+}
+
+.interno-item:last-child {
+    border-bottom: none; /* Remove a borda do último item */
+}
+
+.interno-item span {
+    font-weight: bold; /* Destaca o nome e CPF */
+}
+
+
+
+.interno-item a:hover {
+    text-decoration: underline; /* Sublinha o link ao passar o mouse */
+}
+
+.ver-cadastro {
+   /* background: none; /* Remove o fundo do botão */
+  /*  border: none; /* Remove a borda do botão */
+    cursor: pointer; /* Adiciona um cursor de ponteiro */
+    padding: 10; /* Remove o preenchimento */
+}
+
+.ver-cadastro img {
+    width: 20px; /* Define a largura da imagem */
+    height: 30px; /* Define a altura da imagem */
+    /* Adicione mais estilos se necessário */
+}
+
+.ver-cadastro:hover img {
+    transform: scale(2); /* Aumenta a imagem ao passar o mouse */
+    transition: transform 0.2s; /* Adiciona uma transição suave */
+}
+
+#lista-internos {
+    background-color: white; /* Define o fundo branco */
+    padding: 10px; /* Adiciona um preenchimento interno */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    max-height: 300px; /* Define uma altura máxima para a lista */
+    overflow-y: auto; /* Adiciona rolagem vertical se a lista for muito longa */
+}
+
+
+/*Rodapé*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Faz o corpo ocupar pelo menos a altura da tela */
+    background-color: white; /* Fundo branco */
+}
+
+header {
+    background-color: #f1f1f1; /* Fundo claro para o cabeçalho */
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+main {
+    flex: 1; /* Permite que o main expanda para ocupar o espaço disponível */
+    padding: 20px; /* Adiciona um espaçamento interno no main */
+}
+
+.footer {
+    background-color: var(--branco); 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Sombreado */
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Isso coloca os elementos nas extremidades */
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.footer-logo {
+    max-height: 50px; /* Limite de altura para a logo */
+    margin-left: auto; /* Empurra a logo para a direita */
+}
+
+.footer-texts {
+    display: flex;
+    justify-content: flex-start; /* Alinha o texto à esquerda */
+    width: 100%;
+}
+
+.footer-left {
+    color: var(--preto); /* Cor azul para o texto do rodapé */
+}
+
+.footer::before {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: var(--vermelho); /* Faixa vermelha acima do rodapé */
+}

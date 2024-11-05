@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,11 +15,11 @@
             <nav class="icones">
                 <ul class="icones-lista">
                     <li class="icones-lista-link">
-                        <a href="#">
+                        <a href="javascript:void(0)" onclick="abrirBusca()">
                             <img src="/assets/img/busca.png" alt="Ícone de busca">
                             <p>Buscar</p>
                         </a>
-                    </li>
+                    </li>              
                     <li class="icones-lista-link">
                         <a href="cadastro.html">
                             <img src="/assets/img/cadastra.png" alt="Ícone de cadastro">
@@ -49,20 +49,48 @@
         </div>
     </header>
 
-    <div id="alert-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-button" onclick="fecharModal()">&times;</span>
-            <p>Tem certeza que deseja sair?</p>
-            <button onclick="confirmarRedirecionamento()">Sim</button>
-            <button onclick="fecharModal()">Não</button>
+    <main>
+        <!-- Contêiner para a Barra de Busca e a Lista de Internos -->
+        <div id="busca-container" style="display: none;">
+            <input type="text" id="barra-busca" placeholder="Digite o nome ou CPF do interno" oninput="filtrarLista()">
+            <ul id="lista-internos">
+                <li class="interno-item">
+                    <span>João Silva - 123.456.789-00</span>
+                    <button class="ver-cadastro" onclick="window.location.href='cadastroInternos.html'">
+                        <img src="/assets/img/lupaPequena.png" alt="Ver Cadastro">
+                    </button>
+                </li>
+                <li class="interno-item">
+                    <span>Maria Souza - 987.654.321-00</span>
+                    <button class="ver-cadastro">
+                        <img src="/assets/img/lupaPequena.png" alt="Ver Cadastro">
+                    </button>
+                </li>
+                <li class="interno-item">
+                    <span>Carlos Oliveira - 456.789.123-00</span>
+                    <button class="ver-cadastro">
+                        <img src="/assets/img/lupaPequena.png" alt="Ver Cadastro">
+                    </button>
+                </li>
+                <!-- Adicione mais internos conforme necessário -->
+            </ul>
         </div>
-    </div>
-    
-    <!-- Div para carregar o conteúdo de medicamentos -->
-    <div id="medicamentos-container"></div>
 
-    <!-- Div para carregar o conteúdo de consultas -->
-    <div id="consultas-container" style="display: none;"></div>
+        <!-- Div para carregar o conteúdo de medicamentos -->
+        <div id="medicamentos-container"></div>
+
+        <!-- Div para carregar o conteúdo de consultas -->
+        <div id="consultas-container" style="display: none;"></div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-texts">
+                <p class="footer-left">&copy; 2024 Senior+</p>
+            </div>
+            <img src="/assets/img/logo maior.png" alt="Logo Senior+" class="footer-logo">
+        </div>
+    </footer>
 
     <script src="../assets/js/script.js"></script>
 </body>

@@ -1,0 +1,32 @@
+/* Estilo para as seções do formulário */
+.formulario {
+    background-color: white; /* Fundo branco */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaço entre as seções */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+}
+
+/* Estilo para os títulos das seções */
+.sub-titulo-cadastro {
+    color: var(--vermelho); /* Título em vermelho */
+    font-size: 1.5em; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+.editar-dados {
+    float: right; /* Alinha à direita */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: transform 0.2s, color 0.2s; /* Transição suave para o efeito */
+}
+
+.editar-dados:active .icon-editar {
+    transform: scale(1.2); /* Aumenta o ícone */
+    color: var(--vermelho); /* Muda a cor do ícone (caso o ícone suporte cor) */
+}
+
+.icon-editar {
+    width: 30px; /* Tamanho do ícone */
+    height: 30px; /* Tamanho do ícone */
+    vertical-align: middle; /* Alinha o ícone ao meio do texto */
+}

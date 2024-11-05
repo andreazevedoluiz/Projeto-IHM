@@ -113,12 +113,6 @@ function fecharConsultas() {
 }
 
 
-
-
-
-
-
-
         function filtrarConsultas() {
             const dataFiltro = document.getElementById('data-filtro').value;
             const tabela = document.querySelector('#consultas-tbody');
@@ -137,3 +131,46 @@ function fecharConsultas() {
                 }
             });
         }
+
+
+//BUSCA
+// Exemplo de dados dos internos
+const internos = [
+    { nome: "João Silva", cpf: "123.456.789-00" },
+    { nome: "Maria Souza", cpf: "987.654.321-00" },
+    { nome: "Carlos Oliveira", cpf: "456.789.123-00" },
+    // Adicione mais internos conforme necessário
+];
+
+// Função para abrir a barra de busca e exibir a lista completa dos internos
+function abrirBusca() {
+    const buscaContainer = document.getElementById('busca-container');
+    buscaContainer.style.display = 'block';
+    exibirListaInternos(internos);  // Mostra a lista completa inicialmente
+}
+
+// Função para exibir a lista de internos
+function exibirListaInternos(lista) {
+    const listaContainer = document.getElementById('lista-internos');
+    listaContainer.innerHTML = '';  // Limpa a lista antes de exibir
+
+    lista.forEach(interno => {
+        // Cria o item da lista
+        const li = document.createElement('li');
+        
+        // Cria o conteúdo do item com nome, CPF e o link
+        li.innerHTML = `
+            <span>${interno.nome} - ${interno.cpf}</span>
+            <a href="#">Ver Cadastro</a>
+        `;
+
+        listaContainer.appendChild(li);
+    });
+}
+
+
+
+function voltarParaPaginaInicial() {
+    window.location.href = "../html/paginaInicial.html"; // Ajuste o caminho conforme necessário
+}
+

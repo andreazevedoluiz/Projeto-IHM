@@ -4,6 +4,7 @@
 @import url('login.css');
 @import url('medicamnetos.css');
 @import url('consultas.css');
+@import url('cadastroInterno.css');
 
 :root{
     --branco: #ffffff;
@@ -24,3 +25,4 @@ body {
     height: 100vh; /* Faz o body ocupar toda a altura da janela */
     margin: 0; /* Remove a margem padrão do body */
 }
+
